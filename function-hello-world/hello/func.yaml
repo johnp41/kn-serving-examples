@@ -1,0 +1,11 @@
+specVersion: 0.35.0
+name: hello
+runtime: go
+registry: docker.io/plakic/hello-unik
+image: docker.io/plakic/hello-unik:latest
+imageDigest: sha256:b3b5d0c3d8b66d69614d54aad8fcd650b0002de27d8a5d93698187f8100e83f9
+created: 2023-08-01T13:56:15.797598824Z
+build:
+  builder: pack
+deploy:
+  namespace: default

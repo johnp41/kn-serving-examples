@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: helloworld-go-unik-native
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/plakic/hello-unik-native
+          env:
+            - name: TARGET
+              value: "Go Sample v1"
